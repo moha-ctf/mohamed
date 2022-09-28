@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    display: grid;
+    width:100%;
+    height: auto;
+    grid-template-areas: "head head"
+                         "nav nav"
+                         "section aside"
+                         "footer footer";
+    grid-template-rows: 80px 40px minmax(400,auto) auto;
+    grid-template-columns: 1fr 25%;
+}
+
+header {
+    grid-area: head;
+    background-color: rgb(6, 115, 165);
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(6, 115, 165);
+    color: white;
+}
+
+aside {
+    grid-area: aside;
+    border: 1px solid;
+}
+
+section {
+    grid-area: section;
+    border: 1px solid;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(6, 115, 165);
+    color: white;
+    display: grid;
+    width: auto;
+    height: 100%;
+    grid-template-areas: "section1 section2 section3";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+}
+
+#titre_fin{
+    margin-top: 6em;
+}
+
+#drone{
+    float: left;
+    width: 200px;
+    height: 200px;
+
+}
+
+#donnees{
+    margin: auto;
+    text-align: center;
+    width: 85%;
+}
+
+#descriptiondrone{
+    text-align: left;
+}
+
+footer #section1{
+    grid-area: section1;
+}
+
+footer #section2{
+    grid-area: section2;
+}
+
+footer #section3{
+    grid-area: section3;
+}
+
+nav .liens a{
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
