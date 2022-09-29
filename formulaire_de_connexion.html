@@ -3,17 +3,20 @@
     <head>
         <meta charset="utf-8" />
         <title>Site</title>
-        <link rel="stylesheet" media="screen" type="text/css" href="formulaire_de_connexion.css"/>
+        <link rel="stylesheet" media="screen" type="text/css" href="formulaire.css"/>
     </head>
     <body>
-        <label for="pseudo">Pseudo : </label>
-        <br>
-        <input type="text" id="pseudo" name="pseudo_utilisateur">
-        <br>
-        <label for="Mot de passe">Mot de passe :</label>
-        <br>
-        <input type="text" id="MDP" name="Mot de passe">
-        <br><br>
-        <input type="submit" value="Valider">
+        <h3>Identifiez-vous !</h3>
+        <form action="formulaire_de_connexion.html" method="get">  
+            <label id="labelpseudo" for="pseudo">Pseudo : </label>
+            <br>
+            <input type="text" id="pseudo" name="pseudo_utilisateur" placeholder="pseudo">
+            <br>
+            <label id="labelmdp" for="mdp">Mot de passe :</label>
+            <br>
+            <input type="password" id="mdp" name="mdp" placeholder="mdp">
+            <br>
+            <input type="submit" id="bouton" name="valider" value="valider">
+        </form>
     </body>
 </html>
